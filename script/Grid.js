@@ -17,10 +17,13 @@ class Grid{
 
     show(){
         push();
+        noStroke();
         for(let y = 0; y < this.grid.length; y++){
             for(let x = 0; x < this.grid[y].length; x++){
-                if(this.grid[y][x].wall){
+                if(y == tx && x == ty){
                     fill(255, 0, 0);
+                } else if(this.grid[y][x].wall){
+                    fill(0);
                 } else{
                     fill(255);
                 }
