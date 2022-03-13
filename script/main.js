@@ -16,7 +16,7 @@ function setup(){
     dx = width / cols;
     dy = height / rows;
     population = new Population();
-    slider = createSlider(1, 100, 1);
+    slider = createSlider(1, 1000, 1);
     slider.position(0, 0);
 }
 
